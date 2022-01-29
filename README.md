@@ -27,4 +27,8 @@ My focus on this project was to connect to a database and perform basic CRUD (cr
 * Connecting frontend to the backend
 * CRUD Principles (Create, Read, Update, Destroy)
 * User Authentication
+<<<<<<< HEAD
 * Managing Permissions
+=======
+* Managing Permissions
+>>>>>>> 243a96b54fff5348762e8333b1e14d3c5ec0040c
