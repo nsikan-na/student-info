@@ -3,7 +3,7 @@
 
 My focus on this project was to connect to a database and perform basic CRUD (create,read,update,destroy) actions to grant permessions to user if they provide valid credentials.
 
-(This was built early in my journey, but I think it is solid.)
+(This was built early in my journey, but I think was a solid beginning and I learned a lot.)
 
 ## Project Requirements ##
 * This is a application where a teacher can manage their student's information. 
