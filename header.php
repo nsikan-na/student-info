@@ -14,6 +14,6 @@ print"<!DOCTYPE html>
 echo $title;
 print"</title>
 </head>
-<body class='img js-fullheight' style='background-image: url(images/schoolinfo.jpg);height:100%;
+<body style='background-image: url(images/background.png);height:100%; background-repeat: repeat;
 '>";
 ?>
