@@ -23,6 +23,7 @@ My focus on this project was to connect to a database and perform basic CRUD (cr
 ## What I Learned: ##
 * Structuring Relational Databases
 * Getting Data from forms
+* Validating User Input
 * Getting Data from Database
 * Connecting frontend to the backend
 * CRUD Principles (Create, Read, Update, Destroy)
