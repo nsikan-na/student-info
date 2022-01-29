@@ -1,4 +1,4 @@
-# Manage Student Inforamtion #
+# Student Inforamtion #
 [Visit Live Site](https://nakpan.info/studentinfo/resetlogin.php)
 
 My focus on this project was to connect to a database and perform basic CRUD (create,read,update,destroy) actions to grant permessions to user if they provide valid credentials.
