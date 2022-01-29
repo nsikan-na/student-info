@@ -11,7 +11,7 @@ My focus on this project was to connect to a database and perform basic CRUD (cr
 * The teacher can setup a new account if they do not already have one
 * User can also change their password once they sign in.
 
-## This was build using ##
+## This was built using ##
 * Html
 * Css
 * Bootstrap
