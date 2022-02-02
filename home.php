@@ -1,5 +1,5 @@
 <?php
-$title = "Home";
+$title = "Student Grades";
 require 'header.php';  
 
           $count=$_SESSION['count']-1;

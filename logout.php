@@ -1,5 +1,5 @@
 <?php
-$title='Log Out';
+$title='Student Grades';
 require("header.php");
 
 unset($_SESSION['user']);
@@ -14,7 +14,7 @@ setcookie('Samuel', FALSE, time()-300);
 $count=$_SESSION['count']-1; 
 
 print'<br><br><div style="margin-top:5%;">
-<a href="register.php"><button class="myButton" style="margin-bottom:0px;">Register</button></a>
+<a href="register.php"><button class="myButton" style="margin-bottom:0px;">Sign Up</button></a>
 <a href=\'reset.php\'><button class=\'myButton\' title=\'Reset\'>Reset Table</button></a>
 <a href="login.php"><button class="myButton" style="margin-bottom:0px;">Sign In</button></a><br><br></div>';
 
@@ -33,7 +33,7 @@ print'<br><br><div style="margin-top:5%;">
     $averageAlt=round($totalAlt/$count,2);
 
     
-    print"<h1 style='margin-top:0px;padding-top:0%;'>Student Information</h1>
+    print"<h1 style='margin-top:0px;padding-top:0%;'>Student Grades</h1>
     <table> 
     <tr> 
     <td>Student Name</td> 

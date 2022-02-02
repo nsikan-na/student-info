@@ -16,7 +16,7 @@ print'
 					<div class="login-wrap p-0">
 					<div style=\'background-color:red;color:white;position: absolute;top:0%;margin:0 auto;\' id=\'myAlert\' class=\'alert alert-danger collapse\'>
 Please provide valid credentials! </div>
-		      	<h1 class="mb-4 text-center" style="padding-top:15%;">Register</h1>
+		      	<h1 class="mb-4 text-center" style="padding-top:15%;">Sign Up</h1>
 		      	<form action="register.php" class="signin-form" method="POST">
                   <div class="form-group">
                   <label for="email">Email Address</label>

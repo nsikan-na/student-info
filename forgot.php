@@ -1,5 +1,5 @@
 <?php
-$title='Update Student Information';
+$title='Change Password';
 require("header.php");
 
 if($_POST){
