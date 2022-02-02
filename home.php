@@ -41,16 +41,13 @@ $averageAlt=round($totalAlt/$count,2);
   <div class='greeting'>Hello, ".$_SESSION['user']." | <span><a href='logout.php?logout=true'>Sign Out</a><span>
     <br><a class='forgot'href='forgot.php'> Change your password?</a></div>";
     print"<div style=\'border:1px solid white;background-color:rgba(0, 0, 0,.7);width:75%; border-radius:25px ;margin:auto; padding-top:2%;\'>
-    <h1>Student Information</h1>
-    <table class='table'> 
+    <h1>Student Grades</h1>
+    <table class='table' '> 
     <tr> 
 
     <td>Student Name</td> 
     <td>Number Grade</td> 
     <td>Letter Grade</td> 
-    <td>Start Date</td>
-    <td>Completion Date</td>
-    <td>Days in Class</td>
     <td></td>
     </tr>";
     
@@ -62,13 +59,7 @@ $viewData = 'SELECT * FROM students';
             <td>{$row["name"]}</td>
             <td>{$row["grade"]}</td>
             <td>{$row["letter"]}</td>
-            <td>{$row["sDate"]}</td>";
-            if ($row["cDate"]=='0000-00-00'){
-                print'<td>N/A</td>';
-            }else {print "<td>{$row["cDate"]}</td>";
-          }
-            print" 
-            <td>{$row["daysClass"]}</td>
+
             <td><a title='Update Student Information' href='update.php?pkey={$row["pkey"]}'>".'<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                 <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                 <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
@@ -93,9 +84,7 @@ $viewData = 'SELECT * FROM students';
         </td>
         <td></td>
         <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+
         <td></td>
         </tr>
                 </table>';
@@ -103,7 +92,7 @@ $viewData = 'SELECT * FROM students';
             print"
         
             <div style='font-size:1.25em;padding-bottom:20px;'> Number of Students: <span class='bold'><br>$count</span> <br>
-           Original Grade Average: <span class='bold'><br>$averageGrade</span><br></div></div>";
+            Average Grade : <span class='bold'><br>$averageGrade</span><br></div></div>";
 
 
 

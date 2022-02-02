@@ -17,21 +17,12 @@ Delete Student Information</h1><form action="delete.php" method="post">
       <td>Student Name</td> 
       <td>Number Grade</td> 
       <td>Letter Grade</td> 
-      <td>Start Date</td>
-      <td>Completion Date</td>
-      <td>Days in Class</td>
       </tr>
       <tr>
 
             <td>'.$row["name"].'</td>
             <td>'.$row["grade"].'</td>
             <td>'.$row["letter"].'</td>
-            <td>'.$row["sDate"].'</td>';
-            if ($row["cDate"]=='0000-00-00'){
-                print'<td>N/A</td>';
-            }else {print "<td>{$row["cDate"]}</td>";
-          }
-           print'<td>'.$row["daysClass"].'</td>
             </tr>
             </table>
 		<input type="hidden" name="pkey" value="' . $_GET["pkey"] . '"> 

@@ -21,7 +21,7 @@ print'
 				  <div class="errorLogin"></div>
 		      		<div class="form-group">
 					  <label for="username">Username</label>
-		      			<input type="text" id="username" name="username" class="form-control myLoginInput" value="';
+		      			<input type="text" id="username" name="username" class="form-control myLoginInput myFix" value="';
 						  if (isset($_POST['username'])){
 							  echo $_POST['username'];
 							}
@@ -29,7 +29,7 @@ print'
 		      		</div>
 	            <div class="form-group">
 				<label for="password">Password</label>
-	              <input id="password-field" type="password" name="password" class="form-control myLoginInput"  required>
+	              <input id="password-field" type="password" name="password" class="form-control myLoginInput myFix"  required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">

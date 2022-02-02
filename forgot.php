@@ -29,13 +29,13 @@ if($_POST){
     }
     }
     }
-print"<div>(If you skipped the login form, old password: demo)</div><div class='greeting'>Hello, ".$_SESSION['user']."
+print"<div style='width:75%; margin:0 auto;'>(If you skipped the login form, old password: demo)</div><div class='greeting'>Hello, ".$_SESSION['user']."
 | <span><a href='logout.php?logout=true'>Sign Out</a><span>
 <br></div>";
 print"<div class=\"main\">";
 
 print"
-<div style='border:1px solid white;background-color:rgba(0, 0, 0,.7);width:75%; border-radius:25px ;margin:auto; padding-top:2%; padding-bottom:3%;margin-top:2%;'>
+<div style='border:1px solid white;background-color:rgba(0, 0, 0,.7);width:75%; border-radius:25px ;margin:auto; padding-top:2%; padding-bottom:5%;margin-top:2%;'>
 <h1> Change Password</h1>
 <form action='forgot.php' method='POST' >
 <label for='oldPass'>Old Password</label>

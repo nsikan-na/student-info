@@ -37,12 +37,9 @@ print'<br><br><div style="margin-top:5%;">
     <table> 
     <tr> 
     <td>Student Name</td> 
-    <td>Original Number Grade</td> 
-    <td> Original Letter Grade</td> 
+    <td>Number Grade</td> 
+    <td>Letter Grade</td> 
 
-    <td>Start Date</td>
-    <td>Completion Date</td>
-    <td>Days in Class</td>
     </tr>";
 $viewData = 'SELECT * FROM students';
         $r = mysqli_query($dbc, $viewData);
@@ -52,13 +49,7 @@ $viewData = 'SELECT * FROM students';
             <td>{$row["name"]}</td>
             <td>{$row["grade"]}</td>
             <td>{$row["letter"]}</td>
-            <td>{$row["sDate"]}</td>";
-            if ($row["cDate"]=='0000-00-00'){
-                print'<td>N/A</td>';
-            }else {print "<td>{$row["cDate"]}</td>";
-          }
-            print" 
-            <td>{$row["daysClass"]}</td>
+          
             </tr>
             ";
                 
@@ -67,7 +58,7 @@ $viewData = 'SELECT * FROM students';
             print"
             <br>
             <div style='font-size:1.25em;padding-bottom:20px;'> Number of Students: <span class='bold'><br>$count</span> <br>
-           Original Grade Average: <span class='bold'><br>$averageGrade</span><br></div>";
+          Average Grade : <span class='bold'><br>$averageGrade</span><br></div>";
 
 mysqli_close($dbc);
 require "footer.php";

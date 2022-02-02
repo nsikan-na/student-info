@@ -8,27 +8,9 @@ $trashTable="Truncate Table students";
 @mysqli_query($dbc,$trashTable);
 $name=['Emily','Jordan','Dexter','Morgan'];
 $grade=['85','57','82','76'];
-$sDate=['2015-05-22','2014-06-18','2013-01-17','2010-10-25'];
-$cDate=['2015-10-22','2015-01-05','','2011-04-22'];
-  $daysClass=[];
-  for($i=0;$i<4;$i++){
-    if ($cDate[$i]==""){
-        array_push($daysClass,"To Be Determined");
-        }else{
-    $sDatetime=$sDate[$i];
-    $cDatetime=$cDate[$i];
-    $sDatetime = strtotime($sDatetime);
-    $cDatetime = strtotime($cDatetime);
-    $secs = $cDatetime - $sDatetime;
-    $days = $secs / 86400;
-    $days=round($days);
-    array_push($daysClass, $days);
-    }}
     $letter=[];
-
     $studentCount=count($name);
     $totalGrade=0;
-    $totalAlt=0;
     for($i=0;$i<=count($name)-1; $i++){
          if($grade[$i]>=90){
                 $letter[$i]='A';
@@ -50,11 +32,10 @@ $cDate=['2015-10-22','2015-01-05','','2011-04-22'];
     }     
      
     $averageGrade=$totalGrade/$studentCount;
-    $averageAlt=$totalAlt/$studentCount;
 
     for($i=0;$i<4; $i++){
         $pkey=$i+1;
-      $insertData="INSERT INTO students (pkey, name,grade,letter, sDate, cDate,daysClass) Values ('$pkey','$name[$i]', '$grade[$i]', '$letter[$i]', '$sDate[$i]', '$cDate[$i]', '$daysClass[$i]')";
+      $insertData="INSERT INTO students (pkey, name,grade,letter) Values ('$pkey','$name[$i]', '$grade[$i]', '$letter[$i]' )";
       @mysqli_query($dbc,$insertData);
       }
       print"<script>location.href='index.php';</script>";

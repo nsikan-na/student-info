@@ -20,7 +20,7 @@ Please provide valid credentials! </div>
 		      	<form action="register.php" class="signin-form" method="POST">
                   <div class="form-group">
                   <label for="email">Email Address</label>
-	              <input id="email" name="email" type="email" value="'; 
+	              <input id="email" name="email" type="email" class="myFix form-control" value="'; 
 				  if (isset($_POST['email'])){
 					echo $_POST['email'];
 				  } 
@@ -29,7 +29,7 @@ Please provide valid credentials! </div>
 	            </div>
 		      		<div class="form-group">
 					  <label for="username">Username</label>
-		      			<input type="text" id="username" name="username" value="'; 
+		      			<input type="text" id="username" name="username" class="myFix form-control" value="'; 
 						  if (isset($_POST['username'])){
 							echo $_POST['username'];
 						  } 
@@ -37,12 +37,12 @@ Please provide valid credentials! </div>
 		      		</div>
 	            <div class="form-group">
                 <label for="password">Password</label>
-	              <input id="password" type="password" name="password" class="form-control myLoginInput"  required>
+	              <input id="password" type="password" name="password" class="form-control myLoginInput myFix"  required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
                 <div class="form-group">
                 <label for="confirmPass">Confirm Password</label>
-	              <input id="confirmPass" name="confirmPass" type="password" class="form-control myLoginInput"  required>
+	              <input id="confirmPass" name="confirmPass" type="password" class="form-control myLoginInput myFix"  required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
